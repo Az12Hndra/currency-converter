@@ -15,8 +15,19 @@ def get_rates(from_currency):
     
     return data['conversion_rates']
     
-def get_user_input():
-    pass
+def get_user_input(rates):
+    while True:
+        from_currency = input('Enter the currency you want to convert from (e.g USD): ').upper()
+        to_currency = input('Enter the currency you want to convert to (e.g EUR): ').upper()
+        amount = float(input('Enter the amount you want to convert: '))
+
+        if from_currency or to_currency not in rates:
+            print('Invalid currency code. Please try again.')
+            continue
+        else:
+            break
+        
+    return from_currency, to_currency, amount
 
 def convert(rates, to_currency, amount):
     pass
