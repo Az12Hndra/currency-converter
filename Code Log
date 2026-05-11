@@ -1,4 +1,4 @@
 09/05/2026 : I add some functions that I designed in flowchart before I actually code the program. And by today I only update the first function.
 10/05/2026 : Today I updated new function to get the user input using "rates" as the parameter.
              In the same day, I also updated new function to convert the currency.
-11/05/2026 : I updated few lines in main() function, but it is still unfinished.
+11/05/2026 : I finished the program today. With all debugging before I update into the repository, I manage to fix the code and it runs perfectly.
