@@ -42,8 +42,12 @@ def display_result(amount, from_currency, result, to_currency):
     
 def main():
     print('Welcome to Currency Converter')
-    print('`' * 29)
+    print('~' * 29)
 
     from_currency = input('Enter the currency you want to convert from (e.g USD): ').upper()
     rates = get_rates(from_currency)
     to_currency, amount = get_user_input(rates)
+    result = convert(rates, to_currency, amount)
+    display_result(amount, from_currency, result, to_currency)
+
+main()
